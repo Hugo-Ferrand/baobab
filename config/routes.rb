@@ -5,11 +5,11 @@ Rails.application.routes.draw do
     resources :bookings, only: [:create]
   end
 
-  resource :dashboard, only: [:show]
+  resource :dashboard, only: [:dashboard]
 
   namespace :owner do
     resources :trees, only: [:new, :create, :edit, :update, :destroy]
-    resource :dashboard, only: [:show]
+    resource :dashboard, only: [:dashboard]
     resources :bookings do
       member do
         patch :decline, :accept
