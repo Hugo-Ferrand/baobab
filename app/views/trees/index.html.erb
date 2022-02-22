@@ -1,0 +1,9 @@
+<h1>Discover our Baobarium</h1>
+<ul>
+  <% @trees.each do |tree| %>
+    <li><%=tree.species%>
+      <%= "| #{tree.price}€ per day" %>
+      <%= " | location : #{tree.street} #{tree.city} #{tree.country}" %>
+      <% end %>
+    </li>
+</ul>
