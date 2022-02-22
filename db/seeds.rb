@@ -65,3 +65,11 @@ madagascariensis.save
 puts 'Trees well generated'
 
 # Booking.create(start_date: 2022-11-11, end_date: 2022-12-12, comment: 'Amazing this baobab, really really amazing', total_price: 120.20, status: 'Booked')
+
+# For photos
+
+require "open-uri"
+
+file = URI.open('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg')
+three = Tree.new(title: 'NES', body: "A great console")
+three.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
