@@ -34,6 +34,9 @@ gem 'simple_form'
 
 gem 'devise'
 
+# Use cloudinary for images
+gem 'cloudinary', '~> 1.16.0'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
