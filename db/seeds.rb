@@ -56,7 +56,6 @@ madagascariensis = Tree.new(
   rating: 3.5,
   user: matthias
 )
-
 hibisusdus.save
 adansonia.save
 montane.save
@@ -70,6 +69,8 @@ puts 'Trees well generated'
 
 require "open-uri"
 
-file = URI.open('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg')
-three = Tree.new(title: 'NES', body: "A great console")
-three.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527156/baobabs/montane.jpg")
+hibisusdus.photo.attach(io: file, filename: 'nes.jpg', content_type: 'image/jpg')
+
+
+puts 'photos well generated'
