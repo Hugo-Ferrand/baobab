@@ -1,2 +1,9 @@
-<h1>Trees#index</h1>
-<p>Find me in app/views/trees/index.html.erb</p>
+<h1>Discover our Baobarium</h1>
+<ul>
+  <% @trees.each do |tree| %>
+    <li><%=tree.species%>
+      <%= "| #{tree.price}€ per day" %>
+      <%= " | location : #{tree.street} #{tree.city} #{tree.country}" %>
+      <% end %>
+    </li>
+</ul>

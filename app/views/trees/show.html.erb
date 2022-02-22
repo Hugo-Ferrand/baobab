@@ -1,2 +1,5 @@
-<h1>Trees#show</h1>
-<p>Find me in app/views/trees/show.html.erb</p>
+<h1><%= @tree.species %></h1>
+<p><%= @tree.description %></p>
+<p><%= "#{@tree.price} per day" %></p>
+<p><%= "#{@tree.street} #{@tree.city} #{@tree.country}" %></p>
+<p><%= "owner : #{@tree.user.first_name} #{@tree.user.last_name}" %></p>
