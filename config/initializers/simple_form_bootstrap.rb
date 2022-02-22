@@ -372,4 +372,3 @@ SimpleForm.setup do |config|
     select:        :vertical_select
   }
 end
-
