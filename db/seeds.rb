@@ -69,8 +69,16 @@ puts 'Trees well generated'
 
 require "open-uri"
 
-file = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527156/baobabs/montane.jpg")
-hibisusdus.photo.attach(io: file, filename: 'nes.jpg', content_type: 'image/jpg')
+file_hibisusdus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527029/baobabs/hibisusdus.jpg")
+hibisusdus.photo.attach(io: file_hibisusdus, filename: 'nes.jpg', content_type: 'image/jpg')
 
+file_adansonia = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645526946/baobabs/adansonia.jpg")
+adansonia.photo.attach(io: file_adansonia, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_montane = URI.open("http://res.cloudinary.com/dbitcpujz/image/upload/v1645527156/baobabs/montane.jpg")
+montane.photo.attach(io: file_montane, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_madagascariensis = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645537528/baobabs/madagascariensis.jpg")
+madagascariensis.photo.attach(io: file_madagascariensis, filename: 'nes.jpg', content_type: 'image/jpg')
 
 puts 'photos well generated'
