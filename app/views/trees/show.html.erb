@@ -1,0 +1,24 @@
+<div class="baobab_container d-flex justify-content-around">
+  <div>
+    <% if @tree.photo.attached?%>
+      <%= cl_image_tag(@tree.photo.key,
+        width: 400, height: 300, crop: :fill) %>
+    <% end %>
+    <h1><%= @tree.species %></h1>
+    <p><%= @tree.description %> <i class="fas fa-umbrella-beach"> </i></p>
+    <p><i class="fas fa-dollar-sign"></i> <%= "#{@tree.price} per day"%> </p>
+    <div class="details">
+      <p><%= "Location : #{@tree.street} #{@tree.city} #{@tree.country}" %></p>
+      <p><%= "Contact #{@tree.user.first_name} #{@tree.user.last_name}" %> <%= link_to "for more information" %></p>
+    </div>
+    <a class="btn btn-flat" href="#">Book now</a>
+    </div>
+  <div class=>
+    <%= simple_form_for [ @tree, @booking ] do |f| %>
+      <%= f.input :start_date %>
+      <%= f.input :end_date %>
+      <%# <%= f.input :message %>
+      <%# <%= f.submit "Book ", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
