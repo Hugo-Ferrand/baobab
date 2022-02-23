@@ -4,11 +4,15 @@
 @import "config/bootstrap_variables";
 
 // External libraries
+@import "bootstrap-sprockets";
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+// @import "bootstrap";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 
+// Datepicker
+@import "datetime_picker_input";

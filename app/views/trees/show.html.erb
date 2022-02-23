@@ -4,13 +4,13 @@
     <p>
       <i class="fas fa-home"></i>
       <%= link_to "Accueil", root_path %> >
-      <%= link_to "Babobarium", trees_path %> >
-      <%= link_to "#{@tree.species}", tree_path(@tree) %>
+      <%= link_to "Baobarium", trees_path %> >
+      <%= link_to "#{@tree.species.capitalize}", tree_path(@tree) %>
     </p>
   </div>
   <div class="baobab_container d-flex justify-content-around">
     <div>
-      <h1><%= "#{@tree.species} from #{@tree.country}" %></h1>
+      <h1><%= "#{@tree.species.capitalize} from #{@tree.country}" %></h1>
       <div class="baobab_image">
         <% if @tree.photo.attached?%>
           <%= cl_image_tag(@tree.photo.key,
@@ -19,7 +19,7 @@
       </div>
       <div class="first_description">
         <p><%= @tree.description %> <i class="fas fa-umbrella-beach"> </i></p>
-        <p><%= "Location : #{@tree.street} #{@tree.city} #{@tree.country}" %></p>
+        <p><%= "Location : #{@tree.street.capitalize} #{@tree.city} #{@tree.country}" %></p>
         <span><i class="fas fa-dollar-sign"></i> <%= "#{@tree.price} per day"%></span>
       </div>
       <div class="second_description">
@@ -29,12 +29,23 @@
     </div>
     <div class="booking_baobab">
       <%= simple_form_for [ @tree, @booking ] do |f| %>
-        <%= f.input :start_date, item_input_class: "input_class" %>
-        <%= f.input :end_date, item_input_class: "input_class" %>
-        <%= f.input :comment, item_input_class: "input_class" %>
-        <%# <%= f.submit "Book ", class: "btn btn-primary" %>
+        <p>Start date*</p>
+        <%= f.text_field :start_date, as: :string,
+          data: {
+            controller: "flatpickr",
+            flatpickr_date_format: "d-m-Y",
+            flatpickr_min_date: Time.zone.now
+          } %>
+        <p>End date*</p>
+        <%= f.text_field :end_date,
+          data: {
+            controller: "flatpickr",
+            flatpickr_date_format: "d-m-Y",
+            flatpickr_min_date: Time.zone.now
+          } %>
+        <%= f.input :comment, class: "" %>
+        <%= f.submit "Book now", class: "btn btn-flat" %>
       <% end %>
-      <a class="btn btn-flat" href="#">Book now</a>
     </div>
   </div>
 <div>

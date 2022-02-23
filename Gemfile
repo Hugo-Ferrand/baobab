@@ -67,3 +67,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # For photos
 gem 'cloudinary'
+
+# Date picker
+gem 'datetime_picker_input'
+
+# Bootstrap for sass
+gem 'bootstrap-sass'
+
+# jQuery
+gem 'jquery-rails'
