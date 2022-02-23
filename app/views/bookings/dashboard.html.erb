@@ -1,0 +1,79 @@
+<div class="container">
+  <h1>My own leasings waiting for validation</h1>
+  <%# <%= if @booking.value?("created") %> %>
+    <div class="accordion" id="accordionExample">
+      <% @bookings.each_with_index do |booking, index| %>
+        <% if booking.status == "created" %>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading<%= index.to_s %>">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+                My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
+              </button>
+            </h2>
+            <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
+                <button type="button" class="btn btn-success">Accept</button>
+                <button type="button" class="btn btn-danger">Reject</button>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  <%# <% else %> %>
+    <%# <h2>You have no demands waiting for validation</h1>
+  <% end %> %>
+</div>
+
+<hr>
+
+<div class="container">
+  <h1>My own leasings waiting for validation</h1>
+  <%# <%= if @booking.value?("validated") %> %>
+  <div class="accordion" id="accordionExample">
+    <% @bookings.each_with_index do |booking, index| %>
+      <% if booking.start_date > Date.today && booking.status == "validated" %>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading<%= index.to_s %>">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+              My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
+            </button>
+          </h2>
+          <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <%# <% else %>
+    <%# <h2>You have no demands waiting for validation</h1> %>
+  <%# <% end %> %>
+</div>
+
+<hr>
+
+<div class="container">
+  <h1>My past bookings</h1>
+  <div class="accordion" id="accordionExample">
+    <% @bookings.each_with_index do |booking, index| %>
+      <% if booking.end_date < Date.today && booking.status == "validated" %>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading<%= index.to_s %>">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+              My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
+            </button>
+          </h2>
+          <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
