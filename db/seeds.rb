@@ -132,12 +132,12 @@ riviereorum = Tree.new(
 )
 
 enervados = Tree.new(
-  description: '最美丽的最美丽的最美丽的最美丽的最美丽的',
+  description: 'Sehr schöner prächtiger Baum, der schönste, den ich in meinem Leben gesehen habe',
   price: 320,
   species: 'enervados',
-  street: '最美丽的',
-  city: '最美丽的',
-  country: '最美丽的最美丽的',
+  street: 'berliner strasse',
+  city: 'Berlin',
+  country: 'Deutschland',
   rating: 3.7,
   user: julie
 )
