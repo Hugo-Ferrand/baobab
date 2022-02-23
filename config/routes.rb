@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     resources :bookings, only: [:create]
   end
 
-  resource :dashboard, only: [:dashboard]
+  # resource :dashboard, only: [:dashboard]
+  get "/dashboard", to: "bookings#dashboard"
 
   namespace :owner do
     resources :trees, only: [:new, :create, :edit, :update, :destroy]

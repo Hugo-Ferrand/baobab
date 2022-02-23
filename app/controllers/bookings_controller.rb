@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
 
-  def show
-  
+  def dashboard
+    @bookings = Booking.where(user_id: current_user)
   end
 
   def create
@@ -13,7 +13,7 @@ class BookingsController < ApplicationController
     @booking.status = "created"
     if @booking.save
 
-      redirect_to "dashboard"
+      redirect_to dashboard_path
     else
       render "trees/show"
     end
