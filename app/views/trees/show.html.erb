@@ -10,17 +10,19 @@
   </div>
   <div class="baobab_container d-flex justify-content-around">
     <div>
-      <h1><%= "#{@tree.species.capitalize} from #{@tree.country}" %></h1>
-      <div class="baobab_image">
-        <% if @tree.photo.attached?%>
-          <%= cl_image_tag(@tree.photo.key,
-            width: 400, height: 300, crop: :fill) %>
-        <% end %>
+      <div class="presentation">
+        <h1><%= "#{@tree.species.capitalize} from #{@tree.country} 🌴" %></h1>
+        <div class="baobab_image">
+          <% if @tree.photo.attached?%>
+            <%= cl_image_tag(@tree.photo.key,
+              width: 500, height: 400, crop: :fill) %>
+          <% end %>
+        </div>
       </div>
       <div class="first_description">
-        <p><%= @tree.description %> <i class="fas fa-umbrella-beach"> </i></p>
-        <p><%= "Location : #{@tree.street.capitalize} #{@tree.city} #{@tree.country}" %></p>
-        <span><i class="fas fa-dollar-sign"></i> <%= "#{@tree.price} per day"%></span>
+        <p><%= "#{@tree.description}" %></p>
+        <p><i class="fas fa-map-marker-alt"></i> <%= " #{@tree.street}, #{@tree.city}, #{@tree.country}" %></p>
+        <span><i class="fas fa-dollar-sign"></i> <%= "#{@tree.price} / day"%></span>
       </div>
       <div class="second_description">
         <p><strong> More details </strong></p>

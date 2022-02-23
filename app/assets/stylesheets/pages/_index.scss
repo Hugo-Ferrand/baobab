@@ -1,16 +1,9 @@
 // Import page-specific CSS files here.
-@import "home";
 @import "show";
 
+@import "banner";
+@import "footer";
+@import "nav_bar";
 
-.baobab_container {
-  width: 90%;
-  padding: 20px;
-  background-color: white;
-  color: hsl(0, 0%, 29%);
-  margin: auto;
-}
+@import "list";
 
-h1 {
-  margin-left: 70px;
-}

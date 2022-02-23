@@ -1,12 +1,14 @@
-<br>
-<h1>Baobarium -  🌴<%= @trees.length%> fancy baobabs🌴</h1>
+<h1>Baobarium   🌴<%= @trees.length%> fancy baobabs🌴</h1>
+
 <br>
 <% @trees.each do |tree| %>
-  <div class="baobab_container d-flex justify-content-around">
-        <%= cl_image_tag(tree.photo.key, width: 286, height: 200, crop: :fill) %>
-        <h5 class="card-title"><%= tree.description[0..20] %></h5>
-        <i class="fas fa-euro-sign"></i><%= tree.price %>
-        <br>
-        <%= link_to 'See details', tree_path(tree) %>
+  <div class="card card_index d-inline-block mt-2" >
+    <%= cl_image_tag(tree.photo.key, width: 300, height: 200, crop: :fill) %>
+    <div class="card-body">
+      <b><p class="card-title"><%= tree.species.capitalize[0..28] %></p></b>
+      <p class="card-text"><%= tree.description.capitalize[0..28] %></p>
+      <p >€<%= tree.price %></p>
+      <%= link_to 'See more details', tree_path(tree) %>
+    </div>
   </div>
 <% end %>
