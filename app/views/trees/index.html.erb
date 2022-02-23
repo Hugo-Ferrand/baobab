@@ -7,7 +7,7 @@
     <div class="card-body">
       <b><p class="card-title"><%= tree.species.capitalize[0..28] %></p></b>
       <p class="card-text"><%= tree.description.capitalize[0..28] %></p>
-      <p >€<%= tree.price %></p>
+      <p >$<%= tree.price %></p>
       <%= link_to 'See more details', tree_path(tree) %>
     </div>
   </div>
