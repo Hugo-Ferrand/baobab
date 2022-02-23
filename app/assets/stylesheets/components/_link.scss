@@ -1,0 +1,9 @@
+.link-decoration {
+  text-decoration:none;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+}

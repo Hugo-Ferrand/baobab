@@ -1,6 +1,6 @@
 class Booking < ApplicationRecord
   belongs_to :user
-  has_one :user, through: :trees
+  # has_one :user, through: :tree
   belongs_to :tree
 
   validates :start_date, presence: true
