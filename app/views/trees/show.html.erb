@@ -9,13 +9,12 @@
     </p>
   </div>
   <div class="baobab_container d-flex justify-content-around">
-    <div>
+    <div class="first_container">
       <div class="presentation">
         <h1><%= "#{@tree.species.capitalize} from #{@tree.country} 🌴" %></h1>
         <div class="baobab_image">
           <% if @tree.photo.attached?%>
-            <%= cl_image_tag(@tree.photo.key,
-              width: 500, height: 400, crop: :fill) %>
+            <%= cl_image_tag(@tree.photo.key, crop: :fill) %>
           <% end %>
         </div>
       </div>
@@ -37,15 +36,15 @@
             controller: "flatpickr",
             flatpickr_date_format: "d-m-Y",
             flatpickr_min_date: Time.zone.now
-          } %>
+          }, class:"form-control text optional" %>
         <p>End date*</p>
         <%= f.text_field :end_date,
           data: {
             controller: "flatpickr",
             flatpickr_date_format: "d-m-Y",
             flatpickr_min_date: Time.zone.now
-          } %>
-        <%= f.input :comment, class: "" %>
+          }, class:"form-control text optional" %>
+        <%= f.input :comment %>
         <%= f.submit "Book now", class: "btn btn-flat" %>
       <% end %>
     </div>
