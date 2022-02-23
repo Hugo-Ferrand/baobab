@@ -1,16 +1,19 @@
 class BookingsController < ApplicationController
 
-  def new
-    @booking = Booking.new
+  def show
+  
   end
 
   def create
     @booking = Booking.new(booking_params)
     @tree = Tree.find(params[:tree_id])
     @booking.tree = @tree
-    @booking.user
+    @booking.user = current_user
+    @booking.total_price = @tree.price * (@booking.end_date - @booking.start_date)
+    @booking.status = "created"
     if @booking.save
-      redirect_to tree_path(@tree)
+
+      redirect_to "dashboard"
     else
       render "trees/show"
     end
