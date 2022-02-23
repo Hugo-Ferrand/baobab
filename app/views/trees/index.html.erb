@@ -3,7 +3,7 @@
 <br>
 <% @trees.each do |tree| %>
   <div class="baobab_container d-flex justify-content-around">
-        <%= cl_image_tag(tree.photo.key, width: 286, height: 200, crop: :fill) %>
+        <%= cl_image_tag(tree.photo.key, width: 286, height: 200, crop: :fill) if tree.photo.key %>
         <h5 class="card-title"><%= tree.description[0..20] %></h5>
         <i class="fas fa-euro-sign"></i><%= tree.price %>
         <br>
