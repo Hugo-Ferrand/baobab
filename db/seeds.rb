@@ -6,7 +6,7 @@ User.destroy_all
 
 puts 'Creating Users Trees and Bookings'
 
-hugo = User.create(email: 'hugo@email.com', last_name: 'Ferrand', first_name: 'Hugo', password: 'azerty')
+hugo = User.create(email: 'hugo@email.com', last_name: 'Ferrand', first_name: 'Hugo', password: '   ')
 sarah = User.create(email: 'sarah@outlook.com', last_name: 'Guillon', first_name: 'Sarah', password: 'aaaaaa')
 christiane = User.create(email: 'christiane@orange.fr', last_name: 'Bugel', first_name: 'christiane', password: 'bbbbbb')
 matthias = User.create(email: 'matthias@gmail.com', last_name: 'Seeburger', first_name: 'matthias', password: 'cccccc')
@@ -249,4 +249,3 @@ file_alix = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697
 alix.photo.attach(io: file_alix, filename: 'nes.jpg', content_type: 'image/jpg')
 
 puts 'Photos of users well generated'
-
