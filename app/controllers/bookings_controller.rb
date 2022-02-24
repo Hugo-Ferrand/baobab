@@ -3,8 +3,8 @@ class BookingsController < ApplicationController
   def dashboard
     @owner_created_bookings = Booking.includes(:tree).where.not(user: current_user).where(status: "created", tree: { user: current_user })
     @renter_created_bookings = Booking.includes(:tree).where.not(tree: { user: current_user }).where(status: "created", user: current_user)
-    @renter_validated_future_bookings = Booking.includes(:tree).where.not(tree: { user: current_user }).where(status: "created", user: current_user).where('start_date > ?', DateTime.now)
-    @renter_validated_past_bookings = Booking.includes(:tree).where.not(tree: { user: current_user }).where(status: "created", user: current_user).where('end_date < ?', DateTime.now)
+    @renter_validated_future_bookings = Booking.includes(:tree).where.not(tree: { user: current_user }).where(status: "validated", user: current_user).where('start_date > ?', DateTime.now)
+    @renter_validated_past_bookings = Booking.includes(:tree).where.not(tree: { user: current_user }).where(status: "validated", user: current_user).where('end_date < ?', DateTime.now)
   end
 
   def create
