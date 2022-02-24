@@ -1,9 +1,21 @@
 // Specific CSS for your home-page
 .banner {
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  padding: 200px 0;
+  padding: 200px 0; */
+  display: flex;
+  height: 100vh;
+  display: flex;
 }
+
+/* .banner-video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  z-index: -2;
+} */
 
 .banner h1 {
   color: white;
@@ -23,4 +35,3 @@
   border-radius: 50px;
 
 }
-

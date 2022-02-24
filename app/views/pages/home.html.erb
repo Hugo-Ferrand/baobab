@@ -1,42 +1,51 @@
 
 <%# Banneer %>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1558694440-03ade9215d7b
-);">
+<div class="banner">
+  <%= video_tag "video.mp4", autoplay: true, loop: :loop, muted: :muted, id:"myVideo", class: "banner-video" %>
   <div class="container">
     <h1>Find the Baobaob <strong>of your dreams</strong> today </strong>!</h1>
-    <p>We are the only baobao market place in the world!.</p>
     <%= link_to "Rent the perfect Baobaob", trees_path, class: "btn btn-flat" %>
   </div>
 </div>
-<%# Card text %>
-<h2> How it works</h2>
-<h3>We put in relation providers of babobabs with people who are in love of them</h3>
 
-    <%# card cathegorie %>
-<%#
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1619203921846-ba381b842a89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)">
-    Our species
-
-</div> %>
-
-<%# card grid %>
-
-<%# <div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1558694725-7f8e89659dc1)">
-    Madagascar
+<%# how it works %>
+<h2>How it works </h2>
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://ibb.co/k3nySZr)">
+    Sign up
   </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1631551807930-6e52bca73022)">
-    France
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Find the perfect Baobaob
   </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1631493642429-576d42c9470a)">
-    China
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Send a Request and enjoy
   </div>
-</div> %>
+</div>
 
 
 
-  <%# <video autoplay muted loop id="myVideo" class="banner-video "> %>
-    <%# <source src="<%= url %>" type="video/mp4"> %>
-  <%# </video> %>
+<h2>Our popular Baobabs </h2>
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1631551807930-6e52bca73022?ixlib)">
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1605512696792-79765f6d8e4a)">
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1515863149848-223cbed59017)">
+  </div>
+</div>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+
+<%# <% @trees.each do |tree| %>
+      <%# <%= link_to tree_path(tree), :class => 'link-decoration' do %>
+        <%# <%= render "/shared/tree_card", tree: tree %>
+      <%# <% end %> %> %>
+    <%# <% end %> %> %> %>
