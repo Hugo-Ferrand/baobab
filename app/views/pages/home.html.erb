@@ -1,8 +1,8 @@
 
 <%# Banneer %>
-<div class="banner">
+<div class="banner banner-container">
   <%= video_tag "video.mp4", autoplay: true, loop: :loop, muted: :muted, id:"myVideo", class: "banner-video" %>
-  <div class="container">
+  <div class="container container-hompage-margin">
     <h1>Find the Baobaob <strong>of your dreams</strong> today </strong>!</h1>
     <%= link_to "Rent the perfect Baobaob", trees_path, class: "btn btn-flat" %>
   </div>
@@ -38,14 +38,11 @@
   </div>
 </div>
 <br>
-<br>
-<br>
+
 </div>
-<br>
-<br>
 
 <%# <% @trees.each do |tree| %>
       <%# <%= link_to tree_path(tree), :class => 'link-decoration' do %>
         <%# <%= render "/shared/tree_card", tree: tree %>
-      <%# <% end %> %> %>
-    <%# <% end %> %> %> %>
+      <%# <% end %>
+    <%# <% end %>
