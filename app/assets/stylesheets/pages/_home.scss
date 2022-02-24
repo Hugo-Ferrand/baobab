@@ -17,10 +17,11 @@ h3 {
 .banner-video {
   position: absolute;
   width: 100%;
-  // height: 300px;
-  z-index: 0;
-  top: Opx;
+  height: 300px;
+  z-index: -2;
+  top: 0;
   left: 0px;
+  object-fit: cover;
 }
 
 .gradient-video {
@@ -33,6 +34,59 @@ h3 {
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.1390931372549019) 44%, rgba(0,212,255,1) 100%);
 }
-.main-banner {
 
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.hero_single.jarallax {
+  height: 650px;
+}
+.hero_single.jarallax .wrapper h3 {
+  font-size: 42px;
+  font-size: 2.625rem;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 767px) {
+  .hero_single.jarallax .wrapper h3 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .hero_single.jarallax .wrapper h3 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+.hero_single.jarallax .wrapper p {
+  font-weight: 400;
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 767px) {
+  .hero_single.jarallax .wrapper p {
+    padding: 0;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+.hero_single.jarallax video {
+  opacity: 1;
 }

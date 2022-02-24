@@ -5,14 +5,7 @@
   <div class="cards">
     <% @trees.each do |tree| %>
       <%= link_to tree_path(tree), :class => 'link-decoration' do %>
-        <div class="card card_index d-inline-block mt-2" >
-          <%= cl_image_tag(tree.photo.key, width: 300, height: 200, crop: :fill) %>
-          <div class="card-body">
-            <b><p class="card-title"><%= tree.species.capitalize[0..28] %></p></b>
-            <p class="card-text"><%= tree.description.capitalize[0..28] %></p>
-            <p>€<%= tree.price %></p>
-          </div>
-        </div>
+        <%= render "/shared/tree_card", tree: tree %>
       <% end %>
     <% end %>
   <div>
