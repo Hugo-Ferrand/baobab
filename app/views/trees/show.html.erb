@@ -13,7 +13,7 @@
       <div class="description">
         <p><%= "#{@tree.description}" %></p>
         <p><i class="fas fa-map-marker-alt"></i> <%= " #{@tree.street}, #{@tree.city}, #{@tree.country}" %></p>
-        <p><%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %> Contact the owner <%= link_to "#{@tree.user.first_name} #{@tree.user.last_name}", class: "link-secondary" %> </p>
+        <p><%= cl_image_tag(@tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %> Contact <%= @tree.user.first_name.capitalize %> </p>
       </div>
     </div>
     <div class="booking_baobab">
