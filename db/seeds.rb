@@ -25,8 +25,8 @@ hibisusdus = Tree.new(
   description: 'The best baobab I have ever seen and great location',
   price: 110,
   species: 'hibisusdus',
-  street: 'main street',
-  city: 'Le Cap',
+  street: '71 Wale St, Schotsche Kloof',
+  city: 'Cape Town',
   country: 'South Africa',
   rating: 4.5,
   user: hugo
@@ -36,8 +36,8 @@ adansonia = Tree.new(
   description: 'Biggest baobab of Brazil',
   price: 200,
   species: 'Adansonia',
-  street: 'Rout square',
-  city: 'Rio',
+  street: 'Av. Nossa Sra.',
+  city: 'Tartarugalzinho',
   country: 'Brazil',
   rating: 4,
   user: sarah
@@ -47,9 +47,9 @@ montane = Tree.new(
   description: 'Oldest baobad of Africa',
   price: 100,
   species: 'Montane',
-  street: 'Avenue day',
-  city: 'Dakar',
-  country: 'Senegal',
+  street: 'Rte Thies-Sindia',
+  city: 'Thiès',
+  country: 'Sénégal',
   rating: 4.5,
   user: christiane
 )
@@ -58,8 +58,8 @@ madagascariensis = Tree.new(
   description: 'unique baobab of Madagascar',
   price: 100,
   species: 'Madagascariensis',
-  street: 'Streety street',
-  city: 'Tananarive',
+  street: '101 Lalana Ramboatiana',
+  city: 'Antananarivo',
   country: 'Madagascar',
   rating: 3.5,
   user: matthias
@@ -69,9 +69,9 @@ ululus = Tree.new(
   description: 'What a plaisir to see the wild in a so good shape',
   price: 90,
   species: 'ululus',
-  street: 'King II',
+  street: '87 Rue Moukoukoulou',
   city: 'Brazzaville',
-  country: 'Congo',
+  country: 'Congo-Brazzaville',
   rating: 4,
   user: luc
 )
@@ -91,9 +91,9 @@ magnitudus = Tree.new(
   description: 'What a shame, the baobab has been destroyed by a strom',
   price: 30,
   species: 'magnitudus',
-  street: 'Kero rudas',
+  street: 'Avenida Francisco de Orellana',
   city: 'Quito',
-  country: 'Equator',
+  country: 'Équateur',
   rating: 3,
   user: paul
 )
@@ -102,7 +102,7 @@ greenpandus = Tree.new(
   description: 'green and very beautifull baobab - ideal to show to your child',
   price: 166,
   species: 'greenpandus',
-  street: 'Rue du près',
+  street: 'Manyanja Rd',
   city: 'Nairobi',
   country: 'Kenya',
   rating: 5,
@@ -113,9 +113,9 @@ phyllostachys = Tree.new(
   description: 'impossible to pronounce the species but still interestant to see',
   price: 123,
   species: 'Phyllostachys',
-  street: 'Square of the great baobab',
-  city: 'baobab city',
-  country: 'Baobab land',
+  street: 'Kayole Spine Rd',
+  city: 'Nairobi',
+  country: 'Kenya',
   rating: 4.3,
   user: nicolas
 )
@@ -124,7 +124,7 @@ riviereorum = Tree.new(
   description: 'warning ! dangerous baobab, close to the torrent river',
   price: 72,
   species: 'Riviereorum',
-  street: 'Riveriera dela rivier',
+  street: 'Pl. de la Independencia',
   city: 'Madrid',
   country: 'Spain',
   rating: 3.1,
@@ -135,7 +135,7 @@ enervados = Tree.new(
   description: 'Sehr schöner prächtiger Baum, der schönste, den ich in meinem Leben gesehen habe',
   price: 320,
   species: 'enervados',
-  street: 'berliner strasse',
+  street: 'Pariser Platz',
   city: 'Berlin',
   country: 'Deutschland',
   rating: 3.7,
@@ -147,7 +147,7 @@ chillus = Tree.new(
   price: 120,
   species: 'chillus',
   street: 'Rue de la paix',
-  city: 'Vannes',
+  city: 'Paris',
   country: 'France',
   rating: 5,
   user: alix
