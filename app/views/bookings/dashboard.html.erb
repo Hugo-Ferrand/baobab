@@ -5,19 +5,19 @@
       <%  @owner_created_bookings.each_with_index do |booking, index| %>
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading<%= index.to_s %>">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
-              <div class="d-flex bd-highlight mb-3">
-                <div class="me-auto p-2 bd-highligh">My baobab : <%= booking.tree.species %></div>
-                <div class="p-2 bd-highlight">Start : <%= booking.start_date %></div>
-                <div class="p-2 bd-highlight">End : <%= booking.end_date %></div>
-                </div>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+              My baobab : <%= booking.tree.species %>  ||  Start : <%= booking.start_date %>  ||  End : <%= booking.end_date %>
             </button>
           </h2>
-          <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+          <div id="collapse1<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+            <div class="accordion-body flex-accordion">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
-              <button type="button" class="btn btn-success">Accept</button>
-              <button type="button" class="btn btn-danger">Reject</button>
+              <div class="margin-dashboard">
+                <%= cl_image_tag(booking.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
+                <p><%= booking.user.first_name.capitalize %> is waiting for you to review the booking.</p>
+              </div>
+              <%= link_to "Accept", accept_owner_booking_path(booking.id), method: "patch", class: "btn btn-success btn-dashboard margin-dashboard" %>
+              <%= link_to "Reject", decline_owner_booking_path(booking.id), method: "patch", class: "btn btn-danger btn-dashboard margin-dashboard" %>
             </div>
           </div>
         </div>
@@ -37,13 +37,18 @@
       <% @renter_created_bookings.each_with_index do |booking, index| %>
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading<%= index.to_s %>">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
                 My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
               </button>
             </h2>
-            <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapse2<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+              <div class="accordion-body flex-accordion">
                 <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
+                <div>
+                  <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
+                  <p><%= booking.tree.user.first_name.capitalize %> is still reviewing your booking.</p>
+                  <p>It will move to your future bookings section below once accepted.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -64,11 +69,11 @@
         <%# <% if booking.start_date > Date.today && booking.status == "validated" && current_user == booking.user %>
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading<%= index.to_s %>">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
               My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
             </button>
           </h2>
-          <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+          <div id="collapse3<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
             </div>
@@ -90,11 +95,11 @@
       <%# <% if booking.end_date < Date.today && booking.status == "validated" && current_user == booking.user %> %>
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading<%= index.to_s %>">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
               My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
             </button>
           </h2>
-          <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
+          <div id="collapse4<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
             </div>
