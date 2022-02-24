@@ -3,7 +3,6 @@ h1 {
   font-size: 30px;
 }
 
-
 .card_index {
   p {
     color: hsl(0, 0%, 13%);
@@ -15,6 +14,10 @@ h1 {
     font-family: Nunito;
   }
   box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.1);
+  h3 {
+    color: black;
+    font-size: 25px;
+  }
 }
 
 body {
