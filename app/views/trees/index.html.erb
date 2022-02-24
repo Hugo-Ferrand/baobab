@@ -1,7 +1,9 @@
 <div class="list_baobab">
-  <h1>Baobarium   🌴<%= @trees.length%> fancy baobabs🌴</h1>
-  <%= render "trees/search"%>
-  <br>
+  <div class="title">
+    <h1><strong>Discover our Baobarium   🌴</strong><%= @trees.length%> fancy baobabs🌴</h1>
+    <%= render "trees/search"%>
+  </div>
+  
   <div class="page_baobab">
     <div class="cards">
       <% @trees.each do |tree| %>
