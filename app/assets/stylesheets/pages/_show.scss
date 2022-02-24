@@ -1,6 +1,6 @@
 .baobab_page {
   background-color: white;
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin: auto;
 }
@@ -8,8 +8,8 @@
 .navigation {
   color: $lime-green;
   text-align: left;
-  margin-bottom: 40px;
-  margin-left: 10px;
+  margin-bottom: 20px;
+
   a {
     color: $lime-green;
     &:hover {
@@ -21,62 +21,73 @@
 .baobab_container {
   color: hsl(0, 0%, 29%);
 
-  .first_container {
-    width : 500px;
+  .description_baobab {
+    width : 450px;
 
-  }
-
-  .presentation {
     img {
       margin-bottom: 15px;
       box-shadow: 0 0 3px hsl(0, 0%, 70%);
       width: 100%;
-      
     }
+
     h1 {
       color: hsl(0, 0%, 13%);
       font-size: 32px;
       font-weight: 700;
-      text-align: center;
-      margin-bottom: 8px;
+      text-align: left;
+      margin-bottom: 15px;
     }
   }
 
-  .first_description {
+  .description {
     text-align: left;
     font-weight: 500;
     font-size: 16px;
-    & span {
-      margin-top: 20px;
-      font-size: 25px;
-      font-weight: 600;
-    }
-  }
+    margin-top: 10px;
 
-  .second_description {
-    text-align: left;
-    margin-top: 20px;
-    p {
-      margin : 6px;
-    }
+
     a {color: $lime-green;
       font-weight: 400;
+      text-decoration: underline;
       &:hover {
         color: $spearmint;
       }
     }
+
+    .avatar {
+      width: 40px;
+      border-radius: 50%;
+    }
   }
+
   .booking_baobab {
     text-align: left;
     width: 450px;
-    margin-top: 60px;
+    margin-top: 50px;
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    span {
+      margin-top: 20px;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    .simple_form {
+      margin-top: 20px;
+    }
+
     .form-control {
-      width: 100%;
+      width: 90%;
       background-color: #F4F4F4;
       color:black;
     }
+
     .btn {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     border-radius: 4px;
     }
