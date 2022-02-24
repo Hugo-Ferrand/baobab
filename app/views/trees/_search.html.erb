@@ -1,6 +1,27 @@
+<div class="container d-flex flex-row">
+  <%= form_tag trees_path, method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-search",
+      placeholder: "Find a country"
+    %>
+    <%= submit_tag "Search", class: "btn-flat" %>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Search -->
-		<div class="hero_single jarallax">
+		<%# <div class="hero_single jarallax">
 		   <div class="wrapper" style="background-color: rgba(0, 0, 0, 0.5);">
 				<div class="container">
 
@@ -39,4 +60,4 @@
 				</div>
 			</div>
 		</div>
-		<!-- /Search -->
+		<!-- /Search --> %>
