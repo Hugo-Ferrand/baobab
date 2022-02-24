@@ -1,12 +1,26 @@
-<h1>Baobarium   🌴<%= @trees.length%> fancy baobabs🌴</h1>
+<div class="list_baobab">
+  <h1>Baobarium   🌴<%= @trees.length%> fancy baobabs🌴</h1>
+  <br>
+  <div class="page_baobab">
+    <div class="cards">
+      <% @trees.each do |tree| %>
+        <%= link_to tree_path(tree), :class => 'link-decoration' do %>
+          <div class="card card_index d-inline-block mt-2" >
+            <%= cl_image_tag(tree.photo.key, width: 280, height: 200, crop: :fill) %>
+            <div class="card-body">
+              <p class="card-title"><%= tree.species.capitalize[0..28] %></p>
+              <p class="card-text"><%= tree.description.capitalize[0..28] %></p>
+              <h3>€<%= tree.price %></h3>
+            </div>
+          </div>
+        <% end %>
 
-<br>
-<div class="container mt-3 mb-5">
-  <div class="cards">
-    <% @trees.each do |tree| %>
-      <%= link_to tree_path(tree), :class => 'link-decoration' do %>
-        <%= render "/shared/tree_card", tree: tree %>
       <% end %>
-    <% end %>
-  <div>
+    </div>
+    <div class="map" style="width: 100%;"
+      data-controller="mapbox"
+      data-mapbox-markers-value="<%= @markers.to_json %>"
+      data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+  </div>
 </div>
