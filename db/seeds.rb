@@ -249,3 +249,4 @@ file_alix = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697
 alix.photo.attach(io: file_alix, filename: 'nes.jpg', content_type: 'image/jpg')
 
 puts 'Photos of users well generated'
+
