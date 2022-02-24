@@ -6,5 +6,11 @@ class TreesController < ApplicationController
 
   def index
     @trees = Tree.all
+    @markers = @trees.geocoded.map do |tree|
+      {
+        lat: tree.latitude,
+        lng: tree.longitude
+      }
+    end
   end
 end

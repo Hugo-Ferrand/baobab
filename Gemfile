@@ -34,6 +34,9 @@ gem 'simple_form'
 
 gem 'devise'
 
+# display map'
+gem "geocoder"
+
 gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
