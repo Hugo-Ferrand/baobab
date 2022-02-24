@@ -1,10 +1,10 @@
-puts 'cleaning db'
+puts 'Cleaning db'
 
 Booking.destroy_all
 Tree.destroy_all
 User.destroy_all
 
-puts 'creating Users Trees and Bookings'
+puts 'Creating Users Trees and Bookings'
 
 hugo = User.create(email: 'hugo@email.com', last_name: 'Ferrand', first_name: 'Hugo', password: 'azerty')
 sarah = User.create(email: 'sarah@outlook.com', last_name: 'Guillon', first_name: 'Sarah', password: 'aaaaaa')
@@ -174,40 +174,78 @@ puts 'Trees well generated'
 
 require "open-uri"
 
-file_hibisusdus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527029/baobabs/hibisusdus.jpg")
+file_hibisusdus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527029/baobabs/Trees/hibisusdus.jpg")
 hibisusdus.photo.attach(io: file_hibisusdus, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_adansonia = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645526946/baobabs/adansonia.jpg")
+file_adansonia = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645526946/baobabs/Trees/adansonia.jpg")
 adansonia.photo.attach(io: file_adansonia, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_montane = URI.open("http://res.cloudinary.com/dbitcpujz/image/upload/v1645527156/baobabs/montane.jpg")
+file_montane = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527156/baobabs/Trees/montane.jpg")
 montane.photo.attach(io: file_montane, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_madagascariensis = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645537528/baobabs/madagascariensis.jpg")
+file_madagascariensis = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645537528/baobabs/Trees/madagascariensis.jpg")
 madagascariensis.photo.attach(io: file_madagascariensis, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_ululus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548869/baobabs/ululus.jpg")
+file_ululus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548869/baobabs/Trees/ululus.jpg")
 ululus.photo.attach(io: file_ululus, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_francus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548925/baobabs/francus.jpg")
+file_francus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548925/baobabs/Trees/francus.jpg")
 francus.photo.attach(io: file_francus, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_magnitudus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548838/baobabs/magnitudus.jpg")
+file_magnitudus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548838/baobabs/Trees/magnitudus.jpg")
 magnitudus.photo.attach(io: file_magnitudus, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_greenpandus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548978/baobabs/greenpandus.jpg")
+file_greenpandus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645548978/baobabs/Trees/greenpandus.jpg")
 greenpandus.photo.attach(io: file_greenpandus, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_phyllostachys = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549009/baobabs/phyllostachys.jpg")
+file_phyllostachys = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549009/baobabs/Trees/phyllostachys.jpg")
 phyllostachys.photo.attach(io: file_phyllostachys, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_riviereorum = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549041/baobabs/riviereorum.jpg")
+file_riviereorum = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549041/baobabs/Trees/riviereorum.jpg")
 riviereorum.photo.attach(io: file_riviereorum, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_enervados = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549079/baobabs/enervados.jpg")
+file_enervados = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549079/baobabs/Trees/enervados.jpg")
 enervados.photo.attach(io: file_enervados, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_chillus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549126/baobabs/chillus.jpg")
+file_chillus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645549126/baobabs/Trees/chillus.jpg")
 chillus.photo.attach(io: file_chillus, filename: 'nes.jpg', content_type: 'image/jpg')
 
-puts 'photos well generated'
+puts 'Photos of baobabs well generated'
+
+file_hugo = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645696077/baobabs/Users/hugo.jpg")
+hugo.photo.attach(io: file_hugo, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_sarah = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697065/baobabs/Users/sarah.jpg")
+sarah.photo.attach(io: file_sarah, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_christiane = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697049/baobabs/Users/christiane.jpg")
+christiane.photo.attach(io: file_christiane, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_matthias = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697041/baobabs/Users/matthias.jpg")
+matthias.photo.attach(io: file_matthias, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_luc = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697134/baobabs/Users/luc.jpg")
+luc.photo.attach(io: file_luc, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_sophie = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697144/baobabs/Users/sophie.jpg")
+sophie.photo.attach(io: file_sophie, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_paul = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/paul.jpg")
+paul.photo.attach(io: file_paul, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_pierre = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/pierre.jpg")
+pierre.photo.attach(io: file_pierre, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_nicolas = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/nicolas.jpg")
+nicolas.photo.attach(io: file_nicolas, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_anna = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/anna.jpg")
+anna.photo.attach(io: file_anna, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_julie = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/julie.jpg")
+julie.photo.attach(io: file_julie, filename: 'nes.jpg', content_type: 'image/jpg')
+
+file_alix = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/alix.jpg")
+alix.photo.attach(io: file_alix, filename: 'nes.jpg', content_type: 'image/jpg')
+
+puts 'Photos of users well generated'
