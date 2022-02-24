@@ -7,7 +7,11 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading<%= index.to_s %>">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index.to_s %>" aria-expanded="false" aria-controls="collapse<%= index.to_s %>">
-                My baobab : <%= booking.tree.species %> | Start : <%= booking.start_date %> | End : <%= booking.end_date %>
+                <div class="d-flex bd-highlight mb-3">
+                  <div class="me-auto p-2 bd-highligh">My baobab : <%= booking.tree.species %></div>
+                  <div class="p-2 bd-highlight">Start : <%= booking.start_date %></div>
+                  <div class="p-2 bd-highlight">End : <%= booking.end_date %></div>
+                 </div>
               </button>
             </h2>
             <div id="collapse<%= index.to_s %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index.to_s %>" data-bs-parent="#accordionExample">
