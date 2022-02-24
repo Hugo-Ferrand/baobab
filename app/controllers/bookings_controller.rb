@@ -14,6 +14,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.total_price = @tree.price * (@booking.end_date - @booking.start_date)
     @booking.status = "created"
+    
     if @booking.save
 
       redirect_to dashboard_path
