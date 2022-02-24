@@ -6,18 +6,18 @@ User.destroy_all
 
 puts 'Creating Users Trees and Bookings'
 
-hugo = User.create(email: 'hugo@email.com', last_name: 'Ferrand', first_name: 'Hugo', password: '   ')
-sarah = User.create(email: 'sarah@outlook.com', last_name: 'Guillon', first_name: 'Sarah', password: 'aaaaaa')
-christiane = User.create(email: 'christiane@orange.fr', last_name: 'Bugel', first_name: 'christiane', password: 'bbbbbb')
-matthias = User.create(email: 'matthias@gmail.com', last_name: 'Seeburger', first_name: 'matthias', password: 'cccccc')
-luc = User.create(email: 'luc@yahoo.com', last_name: 'Gulo', first_name: 'Luc', password: 'dddddd')
-sophie = User.create(email: 'sophie@free.com', last_name: 'Mareau', first_name: 'Sophie', password: 'eeeeee')
-paul = User.create(email: 'paul@sfr.fr', last_name: 'Pouert', first_name: 'Paul', password: 'ffffff')
-pierre = User.create(email: 'pierreLS96@gmail.com', last_name: 'Array', first_name: 'Pierre', password: 'gggggg')
-nicolas = User.create(email: 'nicolasweb@gmail.com', last_name: 'Deluf', first_name: 'Nicolas', password: 'hhhhhh')
-anna = User.create(email: 'anna_34@outlook.com', last_name: 'Tiro', first_name: 'Anna', password: 'iiiiii')
-julie = User.create(email: 'julieRTO@orange.fr', last_name: 'Jurst', first_name: 'Julie', password: 'jjjjjj')
-alix = User.create(email: 'alix98@orange.fr', last_name: 'Making', first_name: 'Alix', password: 'kkkkkk')
+hugo = User.create(email: 'hugo@email.com', last_name: 'Ferrand', first_name: 'Hugo', password: 'azerty')
+sarah = User.create(email: 'sarah@outlook.com', last_name: 'Guillon', first_name: 'Sarah', password: 'azerty')
+christiane = User.create(email: 'christiane@orange.fr', last_name: 'Bugel', first_name: 'christiane', password: 'azerty')
+matthias = User.create(email: 'matthias@gmail.com', last_name: 'Seeburger', first_name: 'matthias', password: 'azerty')
+luc = User.create(email: 'luc@yahoo.com', last_name: 'Gulo', first_name: 'Luc', password: 'azerty')
+sophie = User.create(email: 'sophie@free.com', last_name: 'Mareau', first_name: 'Sophie', password: 'azerty')
+paul = User.create(email: 'paul@sfr.fr', last_name: 'Pouert', first_name: 'Paul', password: 'azerty')
+pierre = User.create(email: 'pierreLS96@gmail.com', last_name: 'Array', first_name: 'Pierre', password: 'azerty')
+nicolas = User.create(email: 'nicolasweb@gmail.com', last_name: 'Deluf', first_name: 'Nicolas', password: 'azerty')
+anna = User.create(email: 'anna_34@outlook.com', last_name: 'Tiro', first_name: 'Anna', password: 'azerty')
+julie = User.create(email: 'julieRTO@orange.fr', last_name: 'Jurst', first_name: 'Julie', password: 'azerty')
+alix = User.create(email: 'alix98@orange.fr', last_name: 'Making', first_name: 'Alix', password: 'azerty')
 
 puts 'User well generated'
 
