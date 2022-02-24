@@ -9,7 +9,8 @@ class TreesController < ApplicationController
     @markers = @trees.geocoded.map do |tree|
       {
         lat: tree.latitude,
-        lng: tree.longitude
+        lng: tree.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { tree: tree })
       }
     end
   end
