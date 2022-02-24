@@ -1,6 +1,15 @@
-h1 {
-  color: black;
-  font-size: 30px;
+.list_baobab {
+  text-align: center;
+  background-color: white;
+  margin-bottom: 20px;
+  h1 {
+    color: black;
+    font-size: 30px;
+  }
+}
+
+.page_baobab {
+  display: flex;
 }
 
 .card_index {
@@ -18,10 +27,4 @@ h1 {
     color: black;
     font-size: 25px;
   }
-}
-
-body {
- text-align: center;
- background-color: white;
- margin-bottom: 20px;
 }
