@@ -12,7 +12,7 @@ class TreesController < ApplicationController
         lat: tree.latitude,
         lng: tree.longitude,
         info_window: render_to_string(partial: "info_window", locals: { tree: tree }),
-        
+        image_url: helpers.asset_url("baobabmap.png")
       }
     end
   end
