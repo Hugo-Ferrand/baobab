@@ -2,15 +2,20 @@
   text-align: center;
   background-color: white;
   margin: 10px;
-  h1 {
-    color: black;
-    font-size: 30px;
-  }
 }
 
 .title {
   display: flex;
   margin-right: 0;
+  h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700px;
+    span {
+      font-size: 25px;
+      font-weight: 500px;
+    }
+  }
 }
 
 .page_baobab {
