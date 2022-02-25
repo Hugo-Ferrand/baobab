@@ -255,7 +255,7 @@ Booking.create(
   comment: 'Do I need to speak to the baobab ?',
   total_price: 120.20,
   status: 'created',
-  user: hugo,
+  user: sarah,
   tree: hibisusdus
 )
 
@@ -265,7 +265,7 @@ Booking.create(
   comment: 'Does the baobab needs water?',
   total_price: 800,
   status: 'validated',
-  user: sarah,
+  user: christiane,
   tree: adansonia
 )
 
@@ -275,7 +275,7 @@ Booking.create(
   comment: 'Its currently 0 degres... is it a pb?',
   total_price: 100,
   status: 'declined',
-  user: christiane,
+  user: matthias,
   tree: montane
 )
 
@@ -285,7 +285,7 @@ Booking.create(
   comment: 'My doc has fear of the baobab... can I kill your baobab?',
   total_price: 200,
   status: 'created',
-  user: matthias,
+  user: luc,
   tree: madagascariensis
 )
 
@@ -295,7 +295,7 @@ Booking.create(
   comment: 'Is it possible to organise a Zoom with you to see the baobab before?',
   total_price: 270,
   status: 'validated',
-  user: luc,
+  user: sophie,
   tree: ululus
 )
 
@@ -305,7 +305,7 @@ Booking.create(
   comment: 'I look forward to see francus (and you Sophie)',
   total_price: 440,
   status: 'declined',
-  user: sophie,
+  user: paul,
   tree: francus
 )
 
@@ -315,7 +315,7 @@ Booking.create(
   comment: 'Whaouh, I am excited... cant wait',
   total_price: 60,
   status: 'created',
-  user: paul,
+  user: pierre,
   tree: magnitudus
 )
 
@@ -325,7 +325,7 @@ Booking.create(
   comment: 'This baobab looks amazing, really really amazing',
   total_price: 332,
   status: 'validated',
-  user: pierre,
+  user: nicolas,
   tree: greenpandus
 )
 
@@ -335,7 +335,7 @@ Booking.create(
   comment: 'Thanks for our call of yesterday',
   total_price: 123,
   status: 'declined',
-  user: nicolas,
+  user: anna,
   tree: phyllostachys
 )
 
@@ -345,7 +345,7 @@ Booking.create(
   comment: 'Jai hate de voir la bête',
   total_price: 72,
   status: 'created',
-  user: anna,
+  user: julie,
   tree: riviereorum
 )
 
@@ -355,7 +355,7 @@ Booking.create(
   comment: 'Is there something to avoid to do with the baobab?',
   total_price: 320,
   status: 'validated',
-  user: julie,
+  user: alix,
   tree: enervados
 )
 
@@ -365,7 +365,7 @@ Booking.create(
   comment: 'In a way, can the tree be dangerous?',
   total_price: 1080,
   status: 'declined',
-  user: alix,
+  user: hugo,
   tree: chillus
 )
 
