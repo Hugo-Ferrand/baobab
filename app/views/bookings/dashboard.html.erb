@@ -14,7 +14,7 @@
             <div class="accordion-body flex-accordion">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
               <div class="margin-dashboard">
-                <%= cl_image_tag booking.user.photo.key, class: “avatar dropdown-toggle”, id: “navbarDropdown”, data: { bs_toggle: “dropdown” }, ‘aria-haspopup’: true, ‘aria-expanded’: false %>
+                <%= cl_image_tag(booking.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
                 <p><%= booking.user.first_name.capitalize %> is waiting for you to review the booking.</p>
               </div>
               <%= link_to "Accept", accept_owner_booking_path(booking.id), method: "patch", class: "btn btn-success btn-dashboard margin-dashboard" %>
@@ -44,7 +44,7 @@
               <div class="accordion-body flex-accordion">
                 <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
                 <div class="margin-dashboard">
-                  <%= cl_image_tag booking.tree.user.photo.key, class: “avatar dropdown-toggle”, id: “navbarDropdown”, data: { bs_toggle: “dropdown” }, ‘aria-haspopup’: true, ‘aria-expanded’: false %>
+                  <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
                   <p><%= booking.tree.user.first_name.capitalize %> is still reviewing your booking.</p>
                   <p>It will move to your future bookings section below once accepted.</p>
                 </div>
@@ -74,8 +74,7 @@
             <div class="accordion-body flex-accordion">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
               <div class="margin-dashboard">
-                <%# <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
-                <%= cl_image_tag booking.tree.user.photo.key, class: “avatar dropdown-toggle”, id: “navbarDropdown”, data: { bs_toggle: “dropdown” }, ‘aria-haspopup’: true, ‘aria-expanded’: false %>
+                <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
                 <p>You are currently enjoying <%= booking.tree.user.first_name.capitalize %> baobab!</p>
               <p>🌞</p>
               </div>
@@ -105,8 +104,7 @@
             <div class="accordion-body flex-accordion">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
               <div class="margin-dashboard">
-                <%# <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
-                <%= cl_image_tag booking.tree.user.photo.key, class: “avatar dropdown-toggle”, id: “navbarDropdown”, data: { bs_toggle: “dropdown” }, ‘aria-haspopup’: true, ‘aria-expanded’: false %>
+                <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
                 <p>How was <%= booking.tree.user.first_name.capitalize %> baobab?</p>
                 <p>Leave a boa-review!</p>
               </div>
@@ -137,7 +135,7 @@
             <div class="accordion-body flex-accordion">
               <%= cl_image_tag(booking.tree.photo.key, width: 200, height: 200, crop: :fill) %>
               <div class="margin-dashboard">
-                <%= cl_image_tag booking.tree.user.photo.key, class: “avatar dropdown-toggle”, id: “navbarDropdown”, data: { bs_toggle: “dropdown” }, ‘aria-haspopup’: true, ‘aria-expanded’: false %>
+                <%= cl_image_tag(booking.tree.user.photo.key, width: 50, height: 45, class: "avatar dropdown-toggle", crop: :fill) %>
                 <p><%= booking.tree.user.first_name.capitalize %> has rejected your booking...</p>
                 <p>Book another baoabab today!</p>
               </div>
