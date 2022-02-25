@@ -255,7 +255,7 @@ Booking.create(
   comment: 'Do I need to speak to the baobab ?',
   total_price: 120.20,
   status: 'created',
-  user: hugo,
+  user: christiane,
   tree: hibisusdus
 )
 
@@ -265,7 +265,7 @@ Booking.create(
   comment: 'Does the baobab needs water?',
   total_price: 800,
   status: 'validated',
-  user: sarah,
+  user: christiane,
   tree: adansonia
 )
 
@@ -275,7 +275,7 @@ Booking.create(
   comment: 'Its currently 0 degres... is it a pb?',
   total_price: 100,
   status: 'declined',
-  user: christiane,
+  user: sarah,
   tree: montane
 )
 
@@ -285,7 +285,7 @@ Booking.create(
   comment: 'My doc has fear of the baobab... can I kill your baobab?',
   total_price: 200,
   status: 'created',
-  user: matthias,
+  user: christiane,
   tree: madagascariensis
 )
 
@@ -295,7 +295,7 @@ Booking.create(
   comment: 'Is it possible to organise a Zoom with you to see the baobab before?',
   total_price: 270,
   status: 'validated',
-  user: luc,
+  user: christiane,
   tree: ululus
 )
 
@@ -315,7 +315,7 @@ Booking.create(
   comment: 'Whaouh, I am excited... cant wait',
   total_price: 60,
   status: 'created',
-  user: paul,
+  user: christiane,
   tree: magnitudus
 )
 
@@ -330,12 +330,12 @@ Booking.create(
 )
 
 Booking.create(
-  start_date: Date.new(2022,02,15),
-  end_date: Date.new(2022,02,16),
+  start_date: Date.new(2022,03,15),
+  end_date: Date.new(2022,03,16),
   comment: 'Thanks for our call of yesterday',
   total_price: 123,
-  status: 'declined',
-  user: nicolas,
+  status: 'accepted',
+  user: christiane,
   tree: phyllostachys
 )
 
