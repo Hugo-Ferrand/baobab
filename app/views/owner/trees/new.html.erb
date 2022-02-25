@@ -3,12 +3,14 @@
     <h1><strong>Share your baobab</strong></h1>
   </div>
   <div class="form">
-    <%= simple_form_for [@tree] do |f| %>
+    <%= simple_form_for [@tree], url: owner_trees_path do |f| %>
       <%= f.input :species %>
       <%= f.input :street %>
       <%= f.input :countryname, :label => "Country" %>
       <%= f.input :city %>
       <%= f.input :price %>
+      <%= f.input :description %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit "Share", class: "btn-flat" %>
     <% end %>
   </div>
