@@ -9,22 +9,48 @@
 </div>
 
 <%# how it works %>
-<h2>How it works </h2>
+
+<br> <br>
+<%# --------------------------------------Why %>
+
+<h2>Why to rent  a Baobaob?  </h2>
 <div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://ibb.co/k3nySZr)">
-    Sign up
+  <div class="card-product">
+    <img src="https://images.unsplash.com/uploads/14122621859313b34d52b/37e28531" />
+    <div class="card-product-infos">
+      <h2>We deliver your tree</h2>
+      <p> You will not have to stick with a specific tree until the time it is replaced. You can create a different look for the space every month, by getting your current tree replaced as often as you like. With this, you can also realise which type of trees look good and work well in the office environment.<br>Service provided by Pédale et Guidon.
+      </p>
+    </div>
   </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-    Find the perfect Baobab
+
+  <div class="card-product">
+    <img src="https://images.unsplash.com/photo-1500999753436-5de4f76353f5" />
+    <div class="card-product-infos">
+      <h2>It is more economical</h2>
+      <p>Renting a tree is more economical as you will not have to spend on buying containers, hiring help to maintain it and the transportation cost, if you have to replace them often. Renting a tree would mean getting regular maintenance for your tree. If  you are interested in match your tree with fabulous plants we can provide that service thanks or partnership with Treent </p>
+    </div>
+
   </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-    Send a Request and enjoy
+  <div class="card-product">
+    <img src="https://images.unsplash.com/photo-1504598578017-40d9b776f1bc" />
+    <div class="card-product-infos">
+      <h2>You change the world</h2>
+      <p>We set up programmes for the preservation of natural ecosystems by liaising with the local inhabitants so that they can reap the economic benefits of the Baobaob preservation: <br> <br>
+  ~ In Madagascar, we encourage local women associations.<br>
+  ~ In Indonesia, the focus is on traditional food products.<br>
+  ~ In Cameroon, Planète Urgence supports producers to save the dying trees, victims of climate change..</p>
+    </div>
   </div>
 </div>
+  </div>
+<br><br>
 
+<%# --------------------------------------Why %>
 
+<%#
 
 <h2>Our popular Baobabs </h2>
 <div class="cards">
@@ -39,10 +65,20 @@
 </div>
 <br>
 
-</div>
-
 <%# <% @trees.each do |tree| %>
       <%# <%= link_to tree_path(tree), :class => 'link-decoration' do %>
         <%# <%= render "/shared/tree_card", tree: tree %>
       <%# <% end %>
     <%# <% end %>
+
+
+<%# --------------------owner banner----------------------------------------------- %>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1502082553048-f009c37129b9)">
+  <div>
+						<h3> Are you a Baobaob owner?  Join our network and make money </h3>
+            <%= link_to "Rent  your Baobaob", dashboard_path, class: "btn btn-flat" %>
+</div>
+</div>
+<%# ---------------------------------------------owner banner---------------------  %>
+
+
