@@ -30,7 +30,7 @@ hibisusdus = Tree.new(
   species: 'hibisusdus',
   street: '71 Wale St, Schotsche Kloof',
   city: 'Cape Town',
-  country: 'South Africa',
+  countryname: 'South Africa',
   rating: 4.5,
   user: hugo
 )
@@ -41,7 +41,7 @@ adansonia = Tree.new(
   species: 'Adansonia',
   street: 'Av. Nossa Sra.',
   city: 'Tartarugalzinho',
-  country: 'Brazil',
+  countryname: 'Brazil',
   rating: 4,
   user: sarah
 )
@@ -52,7 +52,7 @@ montane = Tree.new(
   species: 'Montane',
   street: 'Rte Thies-Sindia',
   city: 'Thiès',
-  country: 'Sénégal',
+  countryname: 'Sénégal',
   rating: 4.5,
   user: christiane
 )
@@ -63,7 +63,7 @@ madagascariensis = Tree.new(
   species: 'Madagascariensis',
   street: '101 Lalana Ramboatiana',
   city: 'Antananarivo',
-  country: 'Madagascar',
+  countryname: 'Madagascar',
   rating: 3.5,
   user: matthias
 )
@@ -74,7 +74,7 @@ ululus = Tree.new(
   species: 'ululus',
   street: '87 Rue Moukoukoulou',
   city: 'Brazzaville',
-  country: 'Congo-Brazzaville',
+  countryname: 'Congo-Brazzaville',
   rating: 4,
   user: luc
 )
@@ -85,7 +85,7 @@ francus = Tree.new(
   species: 'francus',
   street: '10 Pass. de la Poule Noire',
   city: 'Nantes',
-  country: 'France',
+  countryname: 'France',
   rating: 4.2,
   user: sophie
 )
@@ -96,7 +96,7 @@ magnitudus = Tree.new(
   species: 'magnitudus',
   street: 'Avenida Francisco de Orellana',
   city: 'Quito',
-  country: 'Équateur',
+  countryname: 'Équateur',
   rating: 3,
   user: paul
 )
@@ -107,7 +107,7 @@ greenpandus = Tree.new(
   species: 'greenpandus',
   street: 'Manyanja Rd',
   city: 'Nairobi',
-  country: 'Kenya',
+  countryname: 'Kenya',
   rating: 5,
   user: pierre
 )
@@ -118,7 +118,7 @@ phyllostachys = Tree.new(
   species: 'Phyllostachys',
   street: 'Kayole Spine Rd',
   city: 'Nairobi',
-  country: 'Kenya',
+  countryname: 'Kenya',
   rating: 4.3,
   user: nicolas
 )
@@ -129,7 +129,7 @@ riviereorum = Tree.new(
   species: 'Riviereorum',
   street: 'Pl. de la Independencia',
   city: 'Madrid',
-  country: 'Spain',
+  countryname: 'Spain',
   rating: 3.1,
   user: anna
 )
@@ -140,7 +140,7 @@ enervados = Tree.new(
   species: 'enervados',
   street: 'Pariser Platz',
   city: 'Berlin',
-  country: 'Deutschland',
+  countryname: 'Deutschland',
   rating: 3.7,
   user: julie
 )
@@ -151,7 +151,7 @@ chillus = Tree.new(
   species: 'chillus',
   street: 'Rue de la paix',
   city: 'Paris',
-  country: 'France',
+  countryname: 'France',
   rating: 5,
   user: alix
 )
@@ -255,7 +255,7 @@ Booking.create(
   comment: 'Do I need to speak to the baobab ?',
   total_price: 120.20,
   status: 'created',
-  user: sarah,
+  user: christiane,
   tree: hibisusdus
 )
 
@@ -275,7 +275,7 @@ Booking.create(
   comment: 'Its currently 0 degres... is it a pb?',
   total_price: 100,
   status: 'declined',
-  user: matthias,
+  user: sarah,
   tree: montane
 )
 
@@ -285,7 +285,7 @@ Booking.create(
   comment: 'My doc has fear of the baobab... can I kill your baobab?',
   total_price: 200,
   status: 'created',
-  user: luc,
+  user: christiane,
   tree: madagascariensis
 )
 
@@ -295,7 +295,7 @@ Booking.create(
   comment: 'Is it possible to organise a Zoom with you to see the baobab before?',
   total_price: 270,
   status: 'validated',
-  user: sophie,
+  user: christiane,
   tree: ululus
 )
 
@@ -315,7 +315,7 @@ Booking.create(
   comment: 'Whaouh, I am excited... cant wait',
   total_price: 60,
   status: 'created',
-  user: pierre,
+  user: christiane,
   tree: magnitudus
 )
 
@@ -330,12 +330,12 @@ Booking.create(
 )
 
 Booking.create(
-  start_date: Date.new(2022,02,15),
-  end_date: Date.new(2022,02,16),
+  start_date: Date.new(2022,03,15),
+  end_date: Date.new(2022,03,16),
   comment: 'Thanks for our call of yesterday',
   total_price: 123,
-  status: 'declined',
-  user: anna,
+  status: 'accepted',
+  user: christiane,
   tree: phyllostachys
 )
 

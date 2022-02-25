@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="share-title">
+    <h1><strong>Share your baobab</strong></h1>
+  </div>
+  <div class="form">
+    <%= simple_form_for [@tree] do |f| %>
+      <%= f.input :species %>
+      <%= f.input :street %>
+      <%= f.input :countryname, :label => "Country" %>
+      <%= f.input :city %>
+      <%= f.input :price %>
+      <%= f.submit "Share", class: "btn-flat" %>
+    <% end %>
+  </div>
+</div>
