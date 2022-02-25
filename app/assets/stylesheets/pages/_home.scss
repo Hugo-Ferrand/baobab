@@ -6,6 +6,10 @@ h2 {
   color: #6B6C6C;
 }
 
+.container-hompage-margin {
+  text-align: center;
+}
+
 h3 {
   text-align: center;
   padding: 0px;
@@ -114,7 +118,6 @@ h3 {
 
 .card-product-infos img {
   width: 100px;
-  align-items: center;
 }
 
 .card-product h2 {
@@ -133,4 +136,16 @@ h3 {
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.card-product-infos {
+  h2 {
+    text-align: left;
+    padding-left: 0;
+  }
+  p {
+    color: black;
+    font-size: 13px;
+    text-align: left;
+  }
 }
