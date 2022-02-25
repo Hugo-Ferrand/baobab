@@ -11,9 +11,11 @@
           <div class="card card_index d-inline-block mt-2" >
             <%= cl_image_tag(tree.photo.key, width: 280, height: 200, crop: :fill) %>
             <div class="card-body">
-              <p class="card-title"><%= tree.species.capitalize[0..28] %></p>
+              <p class="card-title"><strong><%= tree.species.capitalize[0..28] %></strong></p>
               <p class="card-text"><%= tree.description.capitalize[0..28] %></p>
-              <h3>€<%= tree.price %></h3>
+              <div class="price">
+                <p>€<%= tree.price %></p>
+              </div>
             </div>
           </div>
         <% end %>
