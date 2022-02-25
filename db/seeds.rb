@@ -1,3 +1,6 @@
+require "open-uri"
+require "date"
+
 puts 'Cleaning db'
 
 Booking.destroy_all
@@ -168,11 +171,7 @@ chillus.save
 
 puts 'Trees well generated'
 
-# Booking.create(start_date: 2022-11-11, end_date: 2022-12-12, comment: 'Amazing this baobab, really really amazing', total_price: 120.20, status: 'Booked')
-
 # For photos
-
-require "open-uri"
 
 file_hibisusdus = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645527029/baobabs/Trees/hibisusdus.jpg")
 hibisusdus.photo.attach(io: file_hibisusdus, filename: 'nes.jpg', content_type: 'image/jpg')
@@ -249,3 +248,125 @@ file_alix = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697
 alix.photo.attach(io: file_alix, filename: 'nes.jpg', content_type: 'image/jpg')
 
 puts 'Photos of users well generated'
+
+Booking.create(
+  start_date: Date.new(2022,01,01),
+  end_date: Date.new(2022,01,03),
+  comment: 'Do I need to speak to the baobab ?',
+  total_price: 120.20,
+  status: 'created',
+  user: hugo,
+  tree: hibisusdus
+)
+
+Booking.create(
+  start_date: Date.new(2022,01,05),
+  end_date: Date.new(2022,01,10),
+  comment: 'Does the baobab needs water?',
+  total_price: 800,
+  status: 'validated',
+  user: sarah,
+  tree: adansonia
+)
+
+Booking.create(
+  start_date: Date.new(2022,01,10),
+  end_date: Date.new(2022,01,11),
+  comment: 'Its currently 0 degres... is it a pb?',
+  total_price: 100,
+  status: 'declined',
+  user: christiane,
+  tree: montane
+)
+
+Booking.create(
+  start_date: Date.new(2022,01,15),
+  end_date: Date.new(2022,01,17),
+  comment: 'My doc has fear of the baobab... can I kill your baobab?',
+  total_price: 200,
+  status: 'created',
+  user: matthias,
+  tree: madagascariensis
+)
+
+Booking.create(
+  start_date: Date.new(2022,01,20),
+  end_date: Date.new(2022,01,23),
+  comment: 'Is it possible to organise a Zoom with you to see the baobab before?',
+  total_price: 270,
+  status: 'validated',
+  user: luc,
+  tree: ululus
+)
+
+Booking.create(
+  start_date: Date.new(2022,01,25),
+  end_date: Date.new(2022,01,27),
+  comment: 'I look forward to see francus (and you Sophie)',
+  total_price: 440,
+  status: 'declined',
+  user: sophie,
+  tree: francus
+)
+
+Booking.create(
+  start_date: Date.new(2022,02,02),
+  end_date: Date.new(2022,02,04),
+  comment: 'Whaouh, I am excited... cant wait',
+  total_price: 60,
+  status: 'created',
+  user: paul,
+  tree: magnitudus
+)
+
+Booking.create(
+  start_date: Date.new(2022,02,05),
+  end_date: Date.new(2022,02,07),
+  comment: 'This baobab looks amazing, really really amazing',
+  total_price: 332,
+  status: 'validated',
+  user: pierre,
+  tree: greenpandus
+)
+
+Booking.create(
+  start_date: Date.new(2022,02,15),
+  end_date: Date.new(2022,02,16),
+  comment: 'Thanks for our call of yesterday',
+  total_price: 123,
+  status: 'declined',
+  user: nicolas,
+  tree: phyllostachys
+)
+
+Booking.create(
+  start_date: Date.new(2022,02,10),
+  end_date: Date.new(2022,02,11),
+  comment: 'Jai hate de voir la bête',
+  total_price: 72,
+  status: 'created',
+  user: anna,
+  tree: riviereorum
+)
+
+Booking.create(
+  start_date: Date.new(2022,02,12),
+  end_date: Date.new(2022,02,13),
+  comment: 'Is there something to avoid to do with the baobab?',
+  total_price: 320,
+  status: 'validated',
+  user: julie,
+  tree: enervados
+)
+
+Booking.create(
+  start_date: Date.new(2022,02,15),
+  end_date: Date.new(2022,02,24),
+  comment: 'In a way, can the tree be dangerous?',
+  total_price: 1080,
+  status: 'declined',
+  user: alix,
+  tree: chillus
+)
+
+puts 'Bookings well generated'

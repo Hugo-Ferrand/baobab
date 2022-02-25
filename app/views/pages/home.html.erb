@@ -1,10 +1,10 @@
 
 <%# Banneer %>
-<div class="banner">
+<div class="banner banner-container">
   <%= video_tag "video.mp4", autoplay: true, loop: :loop, muted: :muted, id:"myVideo", class: "banner-video" %>
-  <div class="container">
-    <h1>Find the Baobaob <strong>of your dreams</strong> today </strong>!</h1>
-    <%= link_to "Rent the perfect Baobaob", trees_path, class: "btn btn-flat" %>
+  <div class="container container-hompage-margin">
+    <h1>Find the Baobab <strong>of your dreams</strong> today </strong>!</h1>
+    <%= link_to "Find the perfect Baobab", trees_path, class: "btn btn-flat" %>
   </div>
 </div>
 
@@ -24,12 +24,14 @@
     </div>
   </div>
 
+
   <div class="card-product">
     <img src="https://images.unsplash.com/photo-1500999753436-5de4f76353f5" />
     <div class="card-product-infos">
       <h2>It is more economical</h2>
       <p>Renting a tree is more economical as you will not have to spend on buying containers, hiring help to maintain it and the transportation cost, if you have to replace them often. Renting a tree would mean getting regular maintenance for your tree. If  you are interested in match your tree with fabulous plants we can provide that service thanks or partnership with Treent </p>
     </div>
+
   </div>
 
   <div class="card-product">
@@ -62,16 +64,12 @@
   </div>
 </div>
 <br>
-<br>
-</div> %>
-<br>
 
 <%# <% @trees.each do |tree| %>
       <%# <%= link_to tree_path(tree), :class => 'link-decoration' do %>
         <%# <%= render "/shared/tree_card", tree: tree %>
       <%# <% end %>
     <%# <% end %>
-
 
 
 <%# --------------------owner banner----------------------------------------------- %>
@@ -82,3 +80,5 @@
 </div>
 </div>
 <%# ---------------------------------------------owner banner---------------------  %>
+
+
