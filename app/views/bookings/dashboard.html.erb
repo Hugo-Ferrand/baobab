@@ -1,3 +1,6 @@
+<div class="share">
+  <%= link_to "Share your baobab", new_owner_tree_path, class:"btn-flat"%>
+</div>
 <div class="container dashboard-big-container p-2 mt-5">
   <h1>My own leasings waiting for validation ⏰✔️❔</h1>
   <% if  @owner_created_bookings.exists? %>
