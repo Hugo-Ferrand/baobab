@@ -211,40 +211,40 @@ chillus.photo.attach(io: file_chillus, filename: 'nes.jpg', content_type: 'image
 
 puts 'Photos of baobabs well generated'
 
-file_hugo = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645696077/baobabs/Users/hugo.jpg")
+file_hugo = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645785971/baobabs/Users/hugo.jpg")
 hugo.photo.attach(io: file_hugo, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_sarah = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697065/baobabs/Users/sarah.jpg")
+file_sarah = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645785821/baobabs/Users/sarah.jpg")
 sarah.photo.attach(io: file_sarah, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_christiane = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697049/baobabs/Users/christiane.jpg")
+file_christiane = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645785735/baobabs/Users/christiane.jpg")
 christiane.photo.attach(io: file_christiane, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_matthias = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697041/baobabs/Users/matthias.jpg")
+file_matthias = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645785866/baobabs/Users/matthias.jpg")
 matthias.photo.attach(io: file_matthias, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_luc = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697134/baobabs/Users/luc.jpg")
+file_luc = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645784572/baobabs/Users/luc.jpg")
 luc.photo.attach(io: file_luc, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_sophie = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697144/baobabs/Users/sophie.jpg")
+file_sophie = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645786095/baobabs/Users/sophie.jpg")
 sophie.photo.attach(io: file_sophie, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_paul = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/paul.jpg")
+file_paul = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645784731/baobabs/Users/paul.jpg")
 paul.photo.attach(io: file_paul, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_pierre = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/pierre.jpg")
+file_pierre = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645784731/baobabs/Users/pierre.jpg")
 pierre.photo.attach(io: file_pierre, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_nicolas = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/nicolas.jpg")
+file_nicolas = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645784572/baobabs/Users/nicolas.jpg")
 nicolas.photo.attach(io: file_nicolas, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_anna = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/anna.jpg")
+file_anna = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645785904/baobabs/Users/anna.jpg")
 anna.photo.attach(io: file_anna, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_julie = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/julie.jpg")
+file_julie = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645786020/baobabs/Users/julie.jpg")
 julie.photo.attach(io: file_julie, filename: 'nes.jpg', content_type: 'image/jpg')
 
-file_alix = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645697332/baobabs/Users/alix.jpg")
+file_alix = URI.open("https://res.cloudinary.com/dbitcpujz/image/upload/v1645786055/baobabs/Users/alix.jpg")
 alix.photo.attach(io: file_alix, filename: 'nes.jpg', content_type: 'image/jpg')
 
 puts 'Photos of users well generated'
@@ -255,7 +255,7 @@ Booking.create(
   comment: 'Do I need to speak to the baobab ?',
   total_price: 120.20,
   status: 'created',
-  user: sarah,
+  user: christiane,
   tree: hibisusdus
 )
 
@@ -275,7 +275,7 @@ Booking.create(
   comment: 'Its currently 0 degres... is it a pb?',
   total_price: 100,
   status: 'declined',
-  user: matthias,
+  user: sarah,
   tree: montane
 )
 
@@ -285,7 +285,7 @@ Booking.create(
   comment: 'My doc has fear of the baobab... can I kill your baobab?',
   total_price: 200,
   status: 'created',
-  user: luc,
+  user: christiane,
   tree: madagascariensis
 )
 
@@ -295,7 +295,7 @@ Booking.create(
   comment: 'Is it possible to organise a Zoom with you to see the baobab before?',
   total_price: 270,
   status: 'validated',
-  user: sophie,
+  user: christiane,
   tree: ululus
 )
 
@@ -315,7 +315,7 @@ Booking.create(
   comment: 'Whaouh, I am excited... cant wait',
   total_price: 60,
   status: 'created',
-  user: pierre,
+  user: christiane,
   tree: magnitudus
 )
 
@@ -330,12 +330,12 @@ Booking.create(
 )
 
 Booking.create(
-  start_date: Date.new(2022,02,15),
-  end_date: Date.new(2022,02,16),
+  start_date: Date.new(2022,03,15),
+  end_date: Date.new(2022,03,16),
   comment: 'Thanks for our call of yesterday',
   total_price: 123,
-  status: 'declined',
-  user: anna,
+  status: 'accepted',
+  user: christiane,
   tree: phyllostachys
 )
 

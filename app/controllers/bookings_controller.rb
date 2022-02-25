@@ -10,8 +10,13 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    if @booking.end_date.nil? || @booking.start_date.nil? || current_user.nil?
-      return redirect_to new_user_session_path
+    @tree = Tree.find(params[:tree_id])
+    
+    if current_user.nil?
+      return redirect_to new_user_session_path, notice: "Please, log yourself first"
+    end
+    if @booking.end_date.nil? || @booking.start_date.nil?
+      return redirect_to tree_path(@tree), notice: "Dates are incorrect"
     end
 
     @tree = Tree.find(params[:tree_id])
