@@ -1,6 +1,6 @@
 
 <div class="pop_up">
   <%= cl_image_tag(tree.photo.key, width: 140, height: 140, crop: :fill) %>
-  <p><strong><%= "#{tree.species.capitalize} "%></strong> <br> <%= "#{tree.street}, #{tree.city}, #{tree.country}" %></p>
+  <p><strong><%= "#{tree.species.capitalize} "%></strong> <br> <%= "#{tree.street}, #{tree.city}, #{tree.countryname}" %></p>
   <%= link_to "See more", tree_path(tree.id), class: "btn-flat"%>
 </div>
